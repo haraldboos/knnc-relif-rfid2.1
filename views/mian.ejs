@@ -1,0 +1,20 @@
+<%- include('./layout/header') %>
+<link href="../public/css/style.css" rel="stylesheet" type="text/css" />
+<!-- <a href="/upd">upload fie</a><br>
+<a href="/portal">upload portral</a> -->
+
+    <img class="tweet" src="../public/images/tweet.png">
+    <!-- <sncript>
+        fuction autoRefresh() {
+        }
+        setInterval('autoRefresh()', 2000);
+    </script>      window.location = window.location.href;
+       -->
+       <script>
+        function autoRefresh() {
+            window.location = window.location.href;
+        }
+        setInterval('autoRefresh()', 60*10000);
+    </script>
+
+<%- include('./layout/footer') %>

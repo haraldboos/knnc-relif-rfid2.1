@@ -1,0 +1,36 @@
+<%- include('./layout/header') %>
+<link href="../public/css/style.css" rel="stylesheet" type="text/css" />
+<div class="tablebox">
+    <table class = "idrf">
+        <tr>
+            <th>teacherid</th>
+            <th>teacher name</th>
+            <th>teacher rifd</th>
+
+        </tr>
+        <% data.forEach((tb)=>{ %>
+        <tr>
+            <td class="tid"><%= tb.teacherid %></td>
+            <td><%= tb.teachername %></td>
+            <td><%= tb.teachersrfid %></td>
+        </tr>
+        <% }); %> 
+        <!-- <form method="post" action="/">
+        <tr>
+            <td><input type="submit"><td>
+            <td><input type="text" placeholder="entername"><td>
+            <td><input type="text"></td>
+             <td><input type="text"><td> -->
+
+        <!-- </tr>    --> 
+
+
+
+    </table>
+    <!-- <table>
+
+    </table> -->
+
+
+
+<%- include('./layout/footer') %>

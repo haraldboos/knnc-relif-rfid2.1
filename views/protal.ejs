@@ -1,0 +1,69 @@
+<%- include('./layout/header') %>
+
+    <!-- <style>
+        body{
+            background: #1B1616;
+            flex-shrink: 0; 
+        }
+        div.tablebox{
+            border-radius: 1%;
+            background: linear-gradient(180deg, #827070 0%, rgba(108, 93, 93, 0.00) 100%);
+            /* flex-shrink: 0;  */
+        }
+    </style> -->
+    <!-- <title>Document</title>
+</head>
+<body> -->
+    <!-- <script>
+        function autoRefresh() {
+            window.location = window.location.href;
+        }
+        setInterval('autoRefresh()', 60*10000);
+    </script> -->
+
+    <!-- <h1>wecome to kmmv tec knoledgr portal</h1> -->
+    <div class="tablebox">
+        <table>
+            <tr>
+                <th>relifno</th>
+                <th>teacher absent</th>
+                <th>lesson  no</th>
+                <th>subject</th>
+                <th>class</th>
+                <th>subteacher</th>
+                <th>atamp</th>
+
+            </tr>
+            <% data.forEach((tb)=>{ %>
+            <tr>
+                <td><%= tb.relifno %></td>
+                <td><%= tb.tname %></td>
+                <td><%= tb.leasson %></td>
+                <td><%= tb.subject %></td>
+                <td><%= tb.class %></td>
+                <td><%= tb.subteacher %></td>
+                <% if (tb.atamp == 1){ %>
+                    <td class="don"><%= tb.atmtime %></td>
+                <% }else{ %>
+                    <td class="nodon"></td>
+                <% } %>
+            </tr>
+            <% }); %>    
+
+
+
+        </table>
+
+    </div>
+    <script>
+        function autoRefresh() {
+            window.location = window.location.href;
+        }
+        setInterval('autoRefresh()', 60*1000);
+    // </script>
+
+<footer class="footer1">
+    <h1 class="cpr">copy right @ 2023</h1>
+</footer>
+</body>
+</html>

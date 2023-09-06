@@ -1,0 +1,41 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> -->
+<%- include('./layout/header') %>
+    <form action="/uploding" method="post" enctype="multipart/form-data">
+        <table class="tb">
+            <tr class="firstrow">
+                <h1>upload the relif file</h1>
+                <input type="file" name="relifxlfile" accept=".xlsx,.xlsm,.xlsb">
+            </tr>
+            <!-- <tr class="secondrow">
+                 <h1>upload the time</h1>
+                <input type="file" name="timexlfile" accept=".xlsx,.xlsm,.xlsb">
+            </tr> --> 
+            <tr class="submittime">
+                <ol><label for="entertime">Entertime is  must:</label>
+
+                    <li>enter 1 <input type="time" name="lesson1"></li>
+                    <li>enter 2 <input type="time" name="lesson2"></li>
+                    <li>enter 3 <input type="time" name="lesson3"></li>
+                    <li>enter 4 <input type="time" name="lesson4"></li>
+                    <li>enter 5 <input type="time" name="lesson5"></li>
+                    <li>enter 6 <input type="time" name="lesson6"></li>
+                    <li>enter 7 <input type="time" name="lesson7"></li>
+                    <li>enter 8 <input type="time" name="lesson8"></li>
+
+                </ol>
+                <input type="submit" value="upload">
+            </tr>
+        </table>
+
+    </form>
+    
+<!-- </body>
+</html> -->
+<%- include('./layout/footer') %>

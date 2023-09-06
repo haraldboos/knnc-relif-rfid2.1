@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.bar{
+    background-color: rgba(32, 32, 32, 0.801);
+    overflow: hidden;
+    color: beige;
+    position: sticky;
+}
+.bar a{
+    float: left;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.bar a:hover{
+    background-color: rgb(0, 157, 248);
+    color: rgb(0, 0, 0);
+}
+h1.he{
+    text-align: center;
+}
+
+body{
+    background: #d8dcdd;
+    flex-shrink: 0; 
+}
+div.tablebox{
+    border-radius: 1%;
+    background: linear-gradient(180deg, #beb2b2 0%, rgba(170, 163, 163, 0) 100%);
+    /* flex-shrink: 0;  */
+}
+footer.footer{
+    background-color: rgba(32, 32, 32, 0.801);
+    text-align: center;
+    /* top: 95%;
+     */
+     /* display: block; */
+    font-family: 'Times New Roman', Times, serif;
+    position:fixed;
+    
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: fit-content;
+    color: white;
+    z-index: 10;
+
+
+}
+footer.footer1{
+    background-color: rgba(32, 32, 32, 0.801);
+    text-align: center;
+    /* top: 95%;
+     */
+     /* display: block; */
+    font-family: 'Times New Roman', Times, serif;
+    position:relative;
+    
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: fit-content;
+    color: white;
+    z-index: 10;
+
+
+}
+img.tweet{
+    border-radius: 5%; 
+    display: block;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+
+    box-shadow: 2px 2px 4px #000000;
+
+    
+}
+td.nodon{
+   background-color: red;
+}
+td.don{
+    background-color: greenyellow;
+}
+form{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+/* t{
+    align-content: center;
+} */
+td.tid{
+    text-align: center;
+}
