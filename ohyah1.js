@@ -166,7 +166,8 @@ function getime(){
     // let itime = `${hours}:${minutes}:${sec}`;
     // console.log(itime,typeof itime);
     // oommm
-    let itime = DateTime.now().toFormat('HH:mm:ss');
+    let itime2 = DateTime.now().setZone('Asia/Colombo');
+    let itime = itime2.toFormat('HH:mm:ss');
     console.log(itime);
     return itime;
 
